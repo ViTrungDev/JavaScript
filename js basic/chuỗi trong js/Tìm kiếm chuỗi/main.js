@@ -24,3 +24,16 @@ console.log(s9.includes("a"));
 // tìm giá trị ở vị trí index
 let s10 = "abcdef abcdef";
 console.log(s10.includes("a", 8));
+
+// kiểu tra chuỗi có bắt đầu bằng:
+let s30 = "abcdef abcdef";
+console.log("chuỗi có bắt đầu từ a hay không: " + s30.startsWith("a"));
+// tìm kiếm với giá tri indexStartWith
+let s31 = "abcdef abcdef";
+console.log("chuỗi có bắt đầu từ bc hay không: " + s31.startsWith("bc", 1));
+// kiểm tra giá trị có kết thúc bằng:
+let s32 = "0123456789";
+console.log("chuỗi có kết thúc bằng 9 hay không: " + s32.endsWith("9"));
+// tìm kiếm với giá tri indexEndWith
+let s33 = "0123456789";
+console.log("chuỗi có kết thúc bằng 9 hay không: " + s33.endsWith("9", 1));
