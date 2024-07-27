@@ -22,3 +22,7 @@ const timestamp = new Date(0);
 console.log(timestamp); // kết quả :Thu Jan 01 1970 08:00:00 GMT+0800 (Giờ Đông Dương)
 console.log(`Năm hiện tại là: ${year}`);
 console.log(`Tháng hiện tại là: ${month}`);
+
+// sử dụng getTime() để lấy ra timestamp hiện tại
+let currentTime = currentDate.getTime();
+console.log(currentTime);// kết quả: 1722072581225
