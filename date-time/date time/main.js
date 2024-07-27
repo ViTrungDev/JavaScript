@@ -20,3 +20,5 @@ console.log("Lấy ra giây hiện tại:", seconds);
 // xuất thử thời gian tại thời điểm 0
 const timestamp = new Date(0);
 console.log(timestamp); // kết quả :Thu Jan 01 1970 08:00:00 GMT+0800 (Giờ Đông Dương)
+console.log(`Năm hiện tại là: ${year}`);
+console.log(`Tháng hiện tại là: ${month}`);
