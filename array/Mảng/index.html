@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // mảng rỗng
+      let arr = [];
+      console.log(arr);
+      //   mảng có nhiều kiểu dữ liệu
+      let arr1 = [1, 2, "three", true, [6, 7, 8]];
+      console.log(arr1);
+      //   Xuất giá trị của mảng thông qua index
+      console.log(arr1[2]);
+      console.log(arr1[3]);
+      console.log(arr1[4]);
+      // khai báo mảng với constructor
+      let arr3 = new Array("one", 2, false);
+      console.log(arr3);
+      //   Tạo mảng với độ dài cố định
+      let arr4 = new Array(5);
+      console.log(arr4);
+      //   duyệt mảng
+      let arrays = [1, 5, 3, 9, 2];
+      let tong = 0;
+      for (let i=0; i < arrays.length; i++) {
+        console.log("Giá trị trong mảng là :",arrays[i]);
+        tong += arrays[i];
+      }
+      console.log(tong);
+    //   dùng foreach để xuất các giá trị trong mảng
+    for(let value of arrays){
+        console.log(value);
+    }
+    </script>
+  </body>
+</html>
