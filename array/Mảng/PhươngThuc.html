@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // phương thức mảng
+      // 1. concat: nối 2 mảng lại tạo thành 1 mảng mới
+      let arr = [1, 2, 3, 4];
+      let arr1 = [6, 7, 8];
+      let newArray = arr.concat(arr1);
+      console.log(newArray);
+      //   2.push(): thêm 1 hoặc nhiều phần tử vào cuối mảng và sẽ thay đổi giá trị của mảng
+      let arr3 = ["one", "two", "three"];
+      arr3.push("fine");
+      console.log(arr3);
+      // 3.unshift: Thêm 1 hoặc nhiều phần tử vào đầu mảng và sẽ làm thay đổi giá trị của mảng
+      let arr4 = [0, 9, "ha"];
+      arr4.unshift(3, 6);
+      console.log(arr4);
+      //   4.Loại bỏ 1 phần tử cuối cùng ra khỏi mảng và trả về giá trị bị loại bỏ
+      let arr5 = [0, 9, "ha"];
+      let removeArr5 = arr5.pop();
+      console.log(removeArr5);
+      console.log(arr5);
+      // 5. shift: loại bỏ phần tử đầu mảng và trả về giá trị bị loại bỏ
+      let arr6 = [0, 9, "ha"];
+      let removeArr2 = arr6.shift();
+      console.log(removeArr2);
+      console.log(arr6);
+      //   6. slice(start,end): tạo 1 bản sao và lưu bản sao ra 1 biến mới
+      let SliceArr = [9, 6, 1, 7, 2, 5, 0, 4, 7];
+      //   let newSlice = SliceArr.slice();
+      let newSlice = SliceArr.slice(1, 4);
+      console.log(newSlice);
+      // 7. includes: kiểm tra xem giá trị có trong mảng ko nếu có thì trả về true
+      let includesArr = [7, 6, 1, 7, 2, 5, 0, 4, 5];
+      let includeBoolean = includesArr.includes(7);
+      console.log(includeBoolean);
+    </script>
+  </body>
+</html>
