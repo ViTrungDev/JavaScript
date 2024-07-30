@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. indexOf(): Trả về phần tử đầu tiên trong mảng nếu ko tìm thấy trả về -1
+      let indexofArr = [1, 9, 3, 2, 7, 6, 2, 3, 4];
+      let newIndex = indexofArr.indexOf(2);
+      console.log(
+        "Tìm thấy phần tử index đầu tiên trong mảng tại vị trí:",
+        newIndex
+      );
+      // 2. lastIndexOf: Trả về giá trị phần tử xuất hiện cuối cùng trong mảng nếu ko thấy trả về -1
+      let indexofArr1 = [1, 9, 3, 2, 7, 6, 2, 3, 4];
+      let newIndex1 = indexofArr1.lastIndexOf(2);
+      console.log(
+        "Tìm thấy phần tử index đầu tiên trong mảng tại vị trí:",
+        newIndex1
+      );
+      // 3.reverse: đảo ngược mảng
+      let indexofArr2 = [1, 9, 3, 2, 7, 6, 2, 3, 4];
+      let newIndexArr = indexofArr2.slice().reverse();
+      console.log("Mảng trước khi đảo ngược", indexofArr2);
+      console.log("Mảng sau khi đảo ngược", newIndexArr);
+    //   4. join(separator):Nối các phần tử trong mảng thành chuỗi,theo kí tự phân cách 'separator'
+    let joinArr = [1, 9, 3, 2, 7, 6, 2, 3, 4];
+   let joinArr2=  joinArr.join();
+   let joinArr3= joinArr.join("+");
+    console.log("Nếu ko chuyền separator:",joinArr2);
+    console.log("Nếu chuyền dấu +:",joinArr3);
+    </script>
+  </body>
+</html>
