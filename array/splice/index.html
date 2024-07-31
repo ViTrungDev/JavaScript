@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Phương thức splice(start,deleteCount,item1,item2) thay đổi các giá trị trong mảng
+      // 1. xóa phần tử trong mảng
+      let arr = [1, 9, 3, 5, 0, 7, 3];
+      arr.splice(2, 1); // bắt đầu từ index =2 và xóa 1 phần tử
+      console.log(arr);
+      //   2. thay thế phần tử trong mảng
+      let arr2 = [1, 9, 3, 5, 0, 7, 3];
+      arr2.splice(2, 1, 20); // xóa 1 phần tử tại vị trí 2 và thay thế bằng số 24
+      console.log(arr2);
+      //   3. thêm phần tử và ko xóa
+      let arr3 = [1, 9, 3, 5, 0, 7, 3];
+      arr3.splice(3, 0, 5, 9, 7, 3);
+      console.log(arr3);
+    </script>
+  </body>
+</html>
