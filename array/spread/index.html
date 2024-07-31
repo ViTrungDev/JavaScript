@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. Tạo bản sao của  mảng và nối giá trị của m2 vào m1 mà ko làm thay đổi giá trị của m1
+      let M1 = [9, 5, 3, 7, 2, 1];
+      let M2 = [...M1];
+      console.log(M2);
+      // 2. chuyền đối số vào hàm
+      function sum(a, b, c) {
+        return a + b + c;
+      }
+      let M3 = [1, 2, 3];
+      let result = sum(...M3);
+      console.log("Tổng là:", result);
+      //   3. kết hợp mảng
+      let M4 = [3, 5, 7];
+      let M5 = [9, 1, 4];
+      let combineArrays = [...M4, ...M5];
+      console.log(combineArrays);
+      // 4. thêm phần tử mới vào mảng
+      let M56 = [1, 2, 3];
+      let M6 = [...M56, 4];
+      console.log(M6);
+      //   5. chuyển đổi iterable thành mảng
+      let myName = "Dog";
+      let chars = [...myName];
+      console.log(chars);
+    </script>
+  </body>
+</html>
