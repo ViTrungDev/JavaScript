@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let m1 = ["a", "d", "g", "b", "e", "c"];
+      for (let value of m1) {
+        console.log(value);
+        console.log("giá trị tương ứng", value.charCodeAt());
+      }
+      let sortM1 = m1.sort();
+      console.log("Mảng sau khi sắp xếp là:", sortM1);
+
+      let m2 = [10000, 1, 9];
+      let sortM2 = m2.sort((a, b) => a - b);
+      console.log("Mảng sau khi sắp xếp là:", sortM2);
+      /*   hàm sort : nếu a - b < 0 thì a sẽ đặt trước b
+                    nếu a - b = 0 thì vị trí a và b ko thay đổi
+                    nếu a - b  >0  thì đối chỗ b sẽ đặt trước a
+*/
+    </script>
+  </body>
+</html>
