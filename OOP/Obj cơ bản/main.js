@@ -22,3 +22,18 @@ console.log(student.fullName);
 console.log(student["birthYear"]);
 console.log(student.getTuoi());
 console.log(student.diemTB());
+
+// thêm sửa xóa trong js
+// 1. thêm thuộc tính
+student.email = "abc@gmail.com";
+student["phone"] = "0697631589";
+console.log(student);
+
+// 2. Xóa bỏ 1 thuộc tính
+delete student.email;
+delete student["phone"];
+console.log(student);
+
+// 3. sửa thuộc tính
+student.birthYear = 2004;
+console.log(student);
