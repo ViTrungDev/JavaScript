@@ -5,7 +5,7 @@ console.log(head);
 let list = document.getElementsByClassName("list");
 list[0].innerHTML = "Học javaScript";
 
-let checkbox = document.querySelector('#agree');
+let checkbox = document.querySelector("#agree");
 checkbox.checked = true;
 console.log(checkbox);
 
