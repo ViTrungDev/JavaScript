@@ -1,0 +1,54 @@
+/* 1.pc */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+/* 2.table and mobile */
+@media (max-width: 991.98px) {
+    .mobile-header {
+    display: block;
+  }
+  .navbar__list {
+    display: none;
+  }
+  .logo__header {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* căn lại menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 41px;
+    left: 24px;
+    color: #fff;
+    width: 24px;
+  }
+  /* code phan overlay */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* kiểm tra xem nếu checkbox đc check thì hiển thị overlay */
+  .menu-checkbox:checked ~ .menu-overlay{
+    opacity: 1;
+    visibility:visible;
+  }
+}
+/* 3.table */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* 4.mobile */
+@media (max-width: 767.98px) {
+}
+/* tạm ẩn những phần ko liên quan */
+/* .hero,
+main,
+.footer {
+  display: none;
+} */
