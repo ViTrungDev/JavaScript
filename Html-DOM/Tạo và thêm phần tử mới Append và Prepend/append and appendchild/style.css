@@ -1,0 +1,6 @@
+.doan_van{
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    font-size: 2rem;
+}
