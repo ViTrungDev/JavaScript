@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PreeventDefault ngăn chặn hành vi người dùng</title>
+    <style>
+      #name,
+      #password {
+        margin-bottom: 8px;
+        width: 200px;
+      }
+      .login {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .submit {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login--action {
+        width: 400px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      #name{
+        margin-top:20px ;
+      }
+      .submit{
+        margin-bottom:20px ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="login--action">
+        <form action="./login" id="login">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <br />
+          <input type="submit" value="submit" class="submit" />
+        </form>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
