@@ -20,10 +20,11 @@ var course = [
     coin: 4,
   },
 ];
-function CourseHandler(course) {
+function CourseHandler(course,index) {
   console.log(course);
 
   return {
+    index:index,
     id: course.id,
     name: `Khóa học: ${course.name}`,
     coin: course.coin,
